@@ -1,7 +1,6 @@
 #include<bitset>
 #include<iostream>
 
-#ifndef B
 
 using std::cout;
 using Bitboard = std::bitset<64>;
@@ -61,6 +60,10 @@ Bitboard knight_attacking_squares(Bitboard& bb) {
     | ((bb >> 17 | bb << 15) & ~File_A);
 
     return result;
+}
+
+Bitboard bishop_attacking_squares(Bitboard& bb) {
+
 }
 
 int main() { 
