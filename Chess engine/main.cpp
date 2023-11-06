@@ -1,6 +1,8 @@
 #include<bitset>
 #include<iostream>
 
+#ifndef B
+
 using std::cout;
 using Bitboard = std::bitset<64>;
 
